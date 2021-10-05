@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+      <meta charset="utf-8">
+      <!-- IMPLEMENTACION JQUERY -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <!-- IMPLEMENTACION BOOTSTRAP -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <!-- IMPLEMENTACION LETRA Y CSS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota|Indie+Flower&display=swap">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <title id="Titulo">Ejercicios Java</title>
+  </head>
+  <body>
+      <h1>Ejercicios Java</h1>
+
+      <div class="FortuneTeller">
+          <h2>Adivino</h2>
+          <p>Haz click en el botón y el adivino te dira tu futuro</p>
+          <button type="button" name="BtnFT" onclick="FT()">Click</button> <br><br>
+          <p id="FT"></p>
+      </div>
+
+      <div class="AgeCalculator">
+          <h2>Calculador de Edad</h2>
+          <form class="" action="index.html" method="POST">
+            <label for=""></label>Año de nacimiento <br>
+            <input type="text" id="AñoN" name="AñoN" value="" required> <br>
+            <label for=""></label>Año futuro <br>
+            <input type="text" id="AñoF" name="AñoF" value="" required> <br><br>
+          </form>
+          <button type="button" name="BtnCE" onclick="CE()">Calcular edad</button> <br><br>
+          <p id="CalcEdad"></p>
+      </div>
+
+      <div class="LifetimeSupply">
+          <h2>Suplementos de Comida</h2>
+          <form class="" action="index.html" method="POST">
+            <label for=""></label>Edad Actual <br>
+            <input type="text" id="EdadA" name="EdadA" value="" required> <br>
+            <label for=""></label>Edad Máxima <br>
+            <input type="text" id="EdadM" name="EdadM" value="" required> <br>
+            <label for=""></label>Paquetes comidos por día <br>
+            <input type="text" id="Comida" name="Comida" value="" required> <br><br>
+          </form>
+          <button type="button" name="BtnSC" onclick="SC()">Calcular</button> <br><br>
+          <p id="CalcComida"></p>
+      </div>
+
+      <div class="Temperature">
+          <h2>Temperatura</h2>
+          <div class="T">
+              <div class="CF">
+                  <form class="" action="index.html" method="POST">
+                      <label for=""></label>Celsius <br>
+                      <input type="text" id="Cel" name="Cel" value="" required> <br><br>
+                  </form>
+                  <button type="button" name="BtnCF" onclick="CF()">Calcular</button> <br><br>
+                  <p id="CalcCF"></p>
+              </div>
+              <div class="FC">
+                  <form class="" action="index.html" method="POST">
+                      <label for=""></label>Fahrenheit <br>
+                      <input type="text" id="Fah" name="Fah" value="" required> <br><br>
+                  </form>
+                  <button type="button" name="BtnFC" onclick="FC()">Calcular</button> <br><br>
+                  <p id="CalcFC"></p>
+              </div>
+          </div>
+      </div>
+
+      <div class="Geometrizer">
+        <h2>Geometrizador</h2>
+        <form class="" action="index.html" method="POST">
+          <label for=""></label>Radio <br>
+          <input type="text" id="Radio" name="Radio" value="" required> <br><br>
+        </form>
+        <button type="button" name="BtnCircunferencia" onclick="Circunferencia()">Calcular</button> <br><br>
+        <p id="CalcCircunferencia"></p>
+        <p id="CalcArea"></p>
+      </div>
+
+      <div class="PuppyAge">
+        <h2>Edad Cachorro</h2>
+        <button type="button" name="BtnPuppy" onclick="DogAge(1)">1 año</button> <br><br>
+        <button type="button" name="BtnPuppy" onclick="DogAge(5)">5 años</button> <br><br>
+        <button type="button" name="BtnPuppy" onclick="DogAge(7)">7 años</button> <br><br>
+        <p id="CalcPuppy"></p>
+      </div>
+
+      <div class="Tarea">
+        <h2>Tarea</h2>
+          <button type="button" name="BtnSquare" onclick="squareNumber(3)">3 elevado a la 2</button> <br><br>
+          <button type="button" name="BtnMitad" onclick="halfNumber(5)">Mitad de 5</button> <br><br>
+          <button type="button" name="BtnPorcentaje" onclick="percentOf(10,50)">Porcentaje (10,50)</button> <br><br>
+          <button type="button" name="BtnArea" onclick="AreaC(2)">Area Circunferencia (2)</button> <br><br>
+          <button type="button" name="BtnCompilatorio" onclick="Compilatorio(10)">Compilatorio con número 10</button> <br><br>
+          <p id="CalcHalf"></p>
+          <p id="CalcSquare"></p>
+          <p id="CalcAreaC"></p>
+          <p id="CalcPercen"></p>
+      </div>
+      <script src="js/Java.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+h1, h2{
+    font-weight: bold;
+}
+h1, h2, .FortuneTeller, .AgeCalculator, .LifetimeSupply, .Temperature, .Geometrizer, .PuppyAge, .Tarea{
+  text-align: center;
+  padding: 1%;
+}
+.FortuneTeller{
+  background-color: rgba(145, 184, 110, 0.74);
+}
+.AgeCalculator{
+  background-color: rgba(110, 173, 184, 0.74);
+}
+.LifetimeSupply{
+  background-color: rgba(184, 137, 110, 0.74);
+}
+.Temperature{
+  background-color: rgba(241, 238, 171, 0.89);
+}
+.T{
+  width: 50%; margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.PuppyAge{
+  background-color: rgba(198, 149, 224, 0.89);
+}
+.Tarea{
+  background-color: rgba(224, 149, 149, 0.92);
+}
